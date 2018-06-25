@@ -9,15 +9,15 @@ This is a chat service in Java that enables text communication between users thr
 
 2. Include both files somewhere in the project directory.
 
-![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/dependencies_install.png)
+![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/images/dependencies_install.png)
 
 3. Find the env file in the directory .../apache-activemq-5.15.3/bin/env
 
-![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/env.png)
+![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/images/env.png)
 
 4. Set the package directory towards the Build folder. Also include NetworkLayer.Message as a serializable package.
 
-![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/env_detail.png)
+![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/images/env_detail.png)
 For a closer look at the code.
 ```
 ACTIVEMQ_OPTS_MEMORY="-Xms64M -Xmx1G"
@@ -30,11 +30,11 @@ fi
 
 3. Go find the Makefile located under the Source directory. 
 
-![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/make.png)
+![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/images/make.png)
 
 4. Be sure to define the path to activemq-all-5.15.3.jar, sqlite-jdbc-3.8.11.2.jar, Source folder, and Build folder within the make file.
 
-![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/make_detail.png)
+![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/images/make_detail.png)
 
 For a closer look at the code.
 ```
