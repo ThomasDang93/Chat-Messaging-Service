@@ -46,7 +46,7 @@ SQL_DIR = /mnt/c/Users/dangt/Desktop/Messenger/apache-activemq-5.15.3/sqlite-jdb
 
 7. Open up a Unix command line terminal and go to the project directory containing the Makefile.
 8. To compile the program, type *make* in the command prompt. This will produce .class files, which will be stored under the Build directory.
-9. Go into Build directory and open the file **run.sh**. Be sure you include the path to **activemq-all-5.15.3.jar** and **sqlite-jdbc-3.8.11.2.jar** in the run script.
+9. Go into Build directory and open the file **run.sh**. Be sure you include the path to **activemq-all-5.15.3.jar** and **sqlite-jdbc-3.8.11.2.jar** in the run script. Also be sure to include the path to the activemq file under the bin folder.
 ![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/images/run.png)
 
 
