@@ -1,5 +1,5 @@
 # Chat-Messaging-Service
-This is a chat service in Java that enables text communication between users through a command line client. This program utilizes apache-activemq-5.15.3 as the network architecture for sending and receiving messages. ActiveMQ is a message broker written in Java together with Java Messaging Service API that offers asynchronous communications and can support multiple clients on a server. Each client will have its own queue to process incoming messages. Each client will also have its own personal SQLite database that stores all transmitting/receiving messagess for users to access.
+This is a chat service in Java that enables text communication between users through a command line client. This program utilizes apache-activemq-5.15.3 as the network architecture for sending and receiving messages. ActiveMQ is a message broker written in Java together with Java Messaging Service API that offers asynchronous communications and can support multiple clients on a server. Each client will have its own queue to process incoming messages. Each client will also have its own personal SQLite database that stores all transmitting/receiving messagess for users to access. In this project scope we will represent two clients as 'TRACY' and 'MACY'. Both TRACY and MACY send messages to each other in a Unix Command Line.
 
 1. To run this program, you will need to download SQLite for database and ActiveMQ for network platform.
     
@@ -28,11 +28,11 @@ if [ -z "$ACTIVEMQ_OPTS" ] ; then
 fi
 ```
 
-3. Go find the Makefile located under the Source directory. 
+5. Go find the Makefile located under the Source directory. 
 
 ![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/images/make.png)
 
-4. Be sure to define the path to activemq-all-5.15.3.jar, sqlite-jdbc-3.8.11.2.jar, Source folder, and Build folder within the make file.
+6. Be sure to define the path to **activemq-all-5.15.3.jar**, **sqlite-jdbc-3.8.11.2.jar** , Source folder, and Build folder within the make file.
 
 ![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/images/make_detail.png)
 
@@ -44,8 +44,15 @@ AMQ_DIR = /mnt/c/Users/dangt/Desktop/Messenger/apache-activemq-5.15.3/activemq-a
 SQL_DIR = /mnt/c/Users/dangt/Desktop/Messenger/apache-activemq-5.15.3/sqlite-jdbc-3.8.11.2.jar #Path to your sqlite-jdbc-3.8.11.2.jar
 ```
 
-5. Open up the command line terminal and go to the project directory containing the make file.
-6. To compile the program, type 'make' and all .class files will be stored under the Build directory.
-7. Go into Build directory and be sure you include the path to activemq-all-5.15.3.jar and sqlite-jdbc-3.8.11.2.jar in the run script.
-8. Type './run.sh AMQ' to run the activemq server. Once that is done, you can now run two client modules with './run.sh TRACY' or './run.sh MACY'
-9. You can now star chatting with TRACY or MACY now.
+7. Open up a Unix command line terminal and go to the project directory containing the Makefile.
+8. To compile the program, type *make* in the command prompt. This will produce .class files, which will be stored under the Build directory.
+9. Go into Build directory and open run.sh. Be sure you include the path to **activemq-all-5.15.3.jar** and **sqlite-jdbc-3.8.11.2.jar** in the run script.
+![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/images/run.png)
+
+
+10. Go back to the Unix command line terminal and type *./run.sh AMQ* to run the activemq server. Once that is done, you can now run our two client modules, TRACY and MACY. 
+
+11 Open two more Unix terminal sessions. In each of those sessions, go into the Build folder and type *./run.sh TRACY* in one session and *./run.sh MACY* in the other session.
+12. You can now star chatting with the TRACY and MACY clients now. Here is an example of what the chat service should look like.
+
+
