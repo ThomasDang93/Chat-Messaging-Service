@@ -53,6 +53,7 @@ SQL_DIR = /mnt/c/Users/dangt/Desktop/Messenger/apache-activemq-5.15.3/sqlite-jdb
 10. Go back to the Unix command line terminal and type *./run.sh AMQ* to run the activemq server. Once that is done, you can now run our two client modules, TRACY and MACY. 
 
 11 Open two more Unix terminal sessions. In each of those sessions, go into the Build folder and type *./run.sh TRACY* in one session and *./run.sh MACY* in the other session.
-12. You can now star chatting with the TRACY and MACY clients now. Here is an example of what the chat service should look like.
 
+12. You can now start chatting with the TRACY and MACY clients now. Here is an example of what the chat service should look like.
 
+![alt text](https://github.com/ThomasDang93/Chat-Messaging-Service/blob/master/images/program_example.png)
